@@ -87,9 +87,9 @@ while running:
 
     ddong_y_position += ddong_speed
     
-    # if ddong_y_position > screen_height:
-    #     ddong_y_position = 0
-    #     ddong_x_position = random.randint(0, screen_width - ddong_width) 
+    if ddong_y_position > screen_height:
+        ddong_y_position = 0
+        ddong_x_position = random.randint(0, screen_width - ddong_width) 
 
     # 가로 경계값 처리
     if character_x_position < 0:
